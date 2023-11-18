@@ -6,7 +6,6 @@ COPY src .
 RUN go build -tags lambda.norpc -o main starter.go
 
 # Copy artifacts to a clean image
-# code
 FROM public.ecr.aws/lambda/provided:al2023
 COPY --from=build /annuums/main /main
 
