@@ -50,7 +50,7 @@ resource "aws_iam_role" "gha_oidc_assume_role" {
                         "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
                     },
                     "StringLike" : {
-                        "token.actions.githubusercontent.com:sub" : ["repo:ojwsakin/ci-cd-pipeline:*"]
+                        "token.actions.githubusercontent.com:sub" : ["repo:ojwsakin/CI-CD-project:*"]
                     }
                 }
             }
